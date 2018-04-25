@@ -1,0 +1,211 @@
+@font-face {
+  font-family: digital;
+  src: url(./assets/digital-7.regular.ttf);
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+/* =========================================================== */
+.calculator-container {
+  border: 4px solid black;
+  width: 380px;
+  margin: 30px auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: 10px 10px grey;
+  background-color: rgb(214, 214, 214);
+}
+.solar-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.solar-cell {
+  position: relative;
+  height: 20px;
+  width: 80px;
+  background-color: #815d22e3;
+  border-radius: 3px;
+  border: 3px solid black;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+}
+.line {
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  background-color: #696969;
+}
+.line:first-child {
+  left: 20px;
+}
+.line:nth-child(2) {
+  left: 40px;
+}
+.line:last-child {
+  left: 60px;
+}
+.container-between-solar-cell-and-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.container-between-solar-cell-and-display > button {
+  background-color: none;
+  border: 1px solid black;
+  background-image: none;
+  width: 100px;
+  border-radius: 0;
+}
+.current-calculation-container > input{
+background-color: transparent;
+border: none;
+}
+.display {
+  width: 350px;
+  height: 50px;
+  margin: 10px auto 10px auto;
+  display: flex;
+}
+.display > input {
+  text-align: right;
+  vertical-align: middle;
+  font-size: 40px;
+  font-family: 'VT323', monospace;
+  /* font-family: digital; */
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.calculator {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
+}
+.numbers-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  align-content: center;
+}
+
+.numbers-row {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.btn {
+  display: flex;
+  flex: 1;
+  height: 75px;
+}
+
+button {
+  outline: none;
+  width: 100%;
+  border-radius: 5px;
+  margin: 4px;
+  box-shadow: 4px 4px grey;
+  background-image: linear-gradient( /* chrome */
+    hsla(0, 0%, 100%, 0.6), hsla(0, 0%, 100%, 0) 50%,
+    hsla(0, 0%, 0%, 0.3) 50%, hsla(0, 0%, 100%, 0.2)
+  );
+  border-image-source: radial-gradient(ellipse closest-side, rgba(0,255,255,0.6) 0%, rgba(0,0,0,0) 100%);
+}
+
+button:active {
+  transform: translateX(2px) translateY(2px);
+  box-shadow: 2px 2px grey;
+}
+
+.column-1 {
+  width: 80px;
+}
+.column-1 > div > button {
+  font-weight: bold;
+  font-size: 20px;
+}
+.row-6 > div > button, .row-5 > div > button {
+  font-weight: bold;
+  font-size: 18px;
+}
+#sqrt-btn > button {
+  font-weight: bolder;
+  font-size: 25px;
+}
+#plus-btn {
+  height: 150px;
+}
+#on-btn > button {
+  background-color: rgb(255, 136, 0);
+}
+#off-btn > button {
+  background-color: black;
+  color: white;
+}
+#plus-btn > button {
+  background-color: rgb(0, 183, 255);
+}
+
+#memory > button {
+  outline: none;
+  width: 100%;
+  border-radius: 5px;
+  margin: 4px;
+  box-shadow: 4px 4px grey;
+  background-image: linear-gradient( /* chrome */
+    hsla(115, 57%, 41%, 0.6), hsla(0, 0%, 100%, 0) 50%,
+    hsla(0, 0%, 0%, 0.3) 50%, hsla(0, 0%, 100%, 0.2)
+  );
+  border-image-source: radial-gradient(ellipse closest-side, rgba(0,255,255,0.6) 0%, rgba(0,0,0,0) 100%);
+}
+
+.history-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 450px;
+  width: 280;
+  margin: auto;
+  background-color: #ebebe4;
+}
+
+.clear-history-button-container > button {
+  background-color: none;
+  border: 1px solid black;
+  background-image: none;
+  width: 100px;
+  border-radius: 0;
+}
