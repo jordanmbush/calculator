@@ -12,7 +12,7 @@ Below you will find some information on how to perform common tasks.<br>
 - [Square Root](#square-root)
 
 - [Supported Browsers](#supported-browsers)
-- [Supported Language Features and Polyfills](#supported-language-features-and-polyfills)
+- [Something Missing?](#something-missing)
 
 ## Addition
 
