@@ -1,6 +1,8 @@
 # Calculator
 ### The classic calculator everyone loves. Some of the functionality this calculator includes are a history view, memory functions, visible type history, and more.
 
+<img src="screenshot.png" width="250px" />
+
 Below you will find some information on how to perform common tasks.<br>
 
 ## Functions
